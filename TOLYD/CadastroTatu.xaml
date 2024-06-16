@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TOLYD.CadastroTatu">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Frame BackgroundColor="LightGray"
+               CornerRadius="20"
+               HeightRequest="100"
+               WidthRequest="200"
+               HasShadow="True"
+               Padding="0">
+
+
+                <Button x:Name="BTNCadastro" Text="Cadastro" BackgroundColor="Black" TextColor="White"
+                        CornerRadius="20" HorizontalOptions="Fill" Clicked="BTNCadastro_Clicked"  />
+
+            </Frame>
+       
+            <Frame BackgroundColor="LightGray"
+               CornerRadius="20"
+               HeightRequest="100"
+               WidthRequest="200"
+               HasShadow="True"
+               Padding="0">
+
+
+                    <Button x:Name="BTNVisualizarLista" Text="Visualizar Cadastros" BackgroundColor="Black" TextColor="White"
+                    CornerRadius="20" HorizontalOptions="Fill" Clicked ="BTNVisualizarLista_Clicked"  />
+
+                </Frame>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

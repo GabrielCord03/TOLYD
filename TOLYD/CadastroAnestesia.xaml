@@ -1,0 +1,77 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TOLYD.CadastroAnestesia">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <!-- Frame para informações do Animal -->
+            <Frame BorderColor="Black" CornerRadius="5" Padding="10" Margin="0,0,0,10">
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Anestesia" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Tipo de Anestesia" Grid.Row="0" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTTipoAnestesia" Grid.Row="1" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Aplicação Anestesia" Grid.Row="2" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTAplicacaoAnestesia" Grid.Row="3" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Indução da Anestesia" Grid.Row="4" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTInducaoAnestesia" Grid.Row="5" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Retorno" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTRetornoAnestesia" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Temperatura" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTTempAnestesia" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Observações" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTObsAnestesia" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+         
+            <Frame BorderColor="Black" CornerRadius="5" Padding="10">
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Parâmetros fisiológicos a cada 10 minutos" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Id" Grid.Row="0" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTIDAnestesia2" Grid.Row="1" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="FC" Grid.Row="2" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTValorFC" Grid.Row="3" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black" StyleId="FC" Completed="Entry_Completed"/>
+                            <Label Text="FR" Grid.Row="4" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTValorFR" Grid.Row="5" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black" StyleId="FR" Completed="Entry_Completed"/>
+                            <Label Text="Oximetria" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTValorOximetria" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"  StyleId="Oximetria" Completed="Entry_Completed"/>
+                            <Label Text="Temperatura" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTValorTemperatura" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black" StyleId="Temperatura" Completed="Entry_Completed"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>
+            </Frame>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="Center">
+                <Button Text="Anterior" Clicked="ButtonAnterior_Clicked"/>
+                <Button Text="Próximo" Clicked="ButtonProximo_Clicked"/>
+                <Button Text="Salvar" Clicked="ButtonSalvar_Clicked"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

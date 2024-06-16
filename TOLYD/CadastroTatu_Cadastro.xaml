@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TOLYD.CadastroTatu_Cadastro">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <!-- Frame para informações do Animal -->
+            <Frame BorderColor="Black" CornerRadius="5" Padding="10" Margin="0,0,0,10">
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Identificação do Animal" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Identificação do Animal" Grid.Row="0" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTIdAnimal" Grid.Row="1" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Número de identificação" Grid.Row="2" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTNumIdAnimal" Grid.Row="3" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Peso" Grid.Row="4" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTPeso" Grid.Row="5" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Número do microchip" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTNumMicroChip" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView> 
+            </Frame>
+
+            <!-- Frame para informações da Captura -->
+            <Frame BorderColor="Black" CornerRadius="5" Padding="10">
+                <ScrollView>
+                    <StackLayout>
+                        <Label Text="Informações da Captura" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+                            <Label Text="Local de Captura" Grid.Row="0" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTLocCap" Grid.Row="1" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Data de Captura" Grid.Row="2" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTDataCap" Grid.Row="3" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Instituição" Grid.Row="4" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTInstituicao" Grid.Row="5" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Contato do Responsável" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTContato" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                            <Label Text="Observações" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                            <Entry x:Name="TXTObs" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                        </Grid>
+                    </StackLayout>
+                </ScrollView>        
+            </Frame>
+
+            <!-- Botão Salvar -->
+            <Button Text="Salvar" Clicked="ButtonSalvar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

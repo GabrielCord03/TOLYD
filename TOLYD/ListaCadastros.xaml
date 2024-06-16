@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TOLYD.ListaCadastros">
+    <ContentPage.Content>
+        <StackLayout Padding="10">
+            <Label Text="Cadastros de Animais" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+            <ListView x:Name="AnimalListView" HasUnevenRows="true">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Padding="10" Margin="0,0,0,10">
+                                <StackLayout.GestureRecognizers>
+                                    <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+                                </StackLayout.GestureRecognizers>
+                                <Label Text="{Binding NomAnimal}" FontSize="Medium" TextColor="Black"/>
+                                <Label Text="{Binding NumIdAnimal}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Peso}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding NumMicroChip}" FontSize="Small" TextColor="Gray"/>
+                                <!-- Informações de captura -->
+                                <Label Text="Informações de Captura" FontSize="Medium" TextColor="Black"/>
+                                <Label Text="{Binding Captura.LocCap}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Captura.DataCap}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Captura.Instituicao}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Captura.Contato}" FontSize="Small" TextColor="Gray"/>
+                                <Label Text="{Binding Captura.Obs}" FontSize="Small" TextColor="Gray"/>
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

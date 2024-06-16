@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TOLYD.CadastroBiometria">
+    <ContentPage.Content>
+        <Frame BorderColor="Black" CornerRadius="5" Padding="10">
+            <ScrollView>
+                <StackLayout>
+                    <Label Text="Biometria" FontSize="Title" TextColor="Black" HorizontalOptions="Center"/>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Comprimento Total" Grid.Row="0" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompTotal" Grid.Row="1" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompTotal" ClearButtonVisibility="WhileEditing" TextColor="Black"/>
+                        <Label Text="Comprimento Cabeça" Grid.Row="2" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompCab" Grid.Row="3" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompCab" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Largura cabeça" Grid.Row="4" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTLargCab" Grid.Row="5" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "Largcab" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Padrão escudo cefálico" Grid.Row="6" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTPadraoEsc" Grid.Row="7" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "PadraoEsc" ClearButtonVisibility="WhileEditing" TextColor="Black"   Completed="Entry_Completed"/>
+                        <Label Text="Comprimento escudo encefálico" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompEscEnc" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompEscEnc" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Largura escudo encefálico" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTLargEscEnc" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "LargEscEnc" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="largura inter-orbital" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTLargIntOrb" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "LargIntOrb" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Largura inter-lacrimal" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTLargIntLacr" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "LargIntLacr" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Comprimento de orelha" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompOr" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompOr" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Comprimento Cauda" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompCauda" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompCauda" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Largura Cauda" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTLargCauda" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "LargCauda" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Comprimento escudo escapular" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompEscEsc" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompEscEsc" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Semicircuferência escudo escapular:" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTSemiCircEscEsc" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "SemiCircEscEsc" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Comprimento escudo Pélvico" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTCompEscPel" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "CompEscPel" ClearButtonVisibility="WhileEditing" TextColor="Black"  Completed="Entry_Completed"/>
+                        <Label Text="Semicircunferência escudo pélvico" Grid.Row="8" Grid.Column="0" FontSize="Body" TextColor="Black" HorizontalOptions="Start"/>
+                        <Entry x:Name="TXTSemiCircEscPel" Grid.Row="9" Grid.Column="0" Keyboard="Text" ReturnType="Next" StyleId = "SemiCircEscPel" ClearButtonVisibility="WhileEditing" TextColor="Black" Completed="Entry_Completed"/>
+                    </Grid>
+                </StackLayout>
+            </ScrollView>
+        </Frame>
+    </ContentPage.Content>
+</ContentPage>
